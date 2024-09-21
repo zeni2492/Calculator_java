@@ -8,6 +8,7 @@ public class Main {
 
         byte choose = in.nextByte();
 
+        //Выбор через переменную тип счисления для калькулятора
         if (choose == 1){
             ArabicIntegers ArabicIntegers = new ArabicIntegers();
             ArabicIntegers.SumArabic();

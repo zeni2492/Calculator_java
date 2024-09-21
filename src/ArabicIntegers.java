@@ -2,10 +2,10 @@ public class ArabicIntegers extends calculator {
 
     @Override
     public int calculate(String num1, String num2, String operator) {
-        try {
+        try { //через try идет обработка ошибка на то что бы пользователь не вводил римские числа пока считает в арабской системе счисления
             int a = Integer.parseInt(num1);
             int b = Integer.parseInt(num2);
-
+            //Выбор математической операции
             switch (operator) {
                 case "+":
                     System.out.println(a + b);
@@ -17,6 +17,7 @@ public class ArabicIntegers extends calculator {
                     System.out.println(a * b);
                     break;
                 case "/":
+                    // в случае если при делении остается дробная часть она выводилась, в случае если целое то показывалось без дроби .0
                     if (b != 0) {
                         double result = (double) a / b;
                         if (result % 1 == 0) {
