@@ -40,7 +40,7 @@ public class ArabicIntegers extends calculator {
     }
 
     public void SumArabic() {
-        String nums[] = InsertNumsAndOperator();
+        String[] nums = InsertNumsAndOperator();
         calculate(nums[0],nums[1],nums[2]);
     }
 }
